@@ -41,7 +41,7 @@ def money(some_money):
 
 
 def zipcode(some_zipcode):
-    x = re.search(r"(\d{5})-?(\d{0,4})?", some_zip)
+    x = re.search(r"(\d{5})-?(\d{0,4})?", some_zipcode)
     if x:
         if len(x.group(2)) == 0:
             return {"zip": "{}".format(x.group(1)), "plus 4": "{}".format(None)}
